@@ -89,7 +89,7 @@ enum da1469x_rtc_div_denom_sel {
 static uint32_t g_mcu_clock_rcx_freq;
 static uint32_t g_mcu_clock_rc32k_freq;
 static uint32_t g_mcu_clock_rc32m_freq = RC32M_FREQ;
-static uint32_t g_mcu_clock_xtal32k_freq;
+static uint32_t g_mcu_clock_xtal32k_freq = XTAL32K_FREQ;    /* De-facto freq until calibration */
 
 uint32_t SystemCoreClock = RC32M_FREQ;
 
